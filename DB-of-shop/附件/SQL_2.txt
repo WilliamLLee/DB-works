@@ -1,0 +1,39 @@
+1	CREATE TABLE F(
+2		c int,
+3		d varchar(20),
+4		primary key(c),
+5	);
+6	
+7	CREATE TABLE E(
+8		a int,
+9		c int,
+10		b varchar(20),
+11		primary key(a,c),
+12		foreign key(c) references F(c)
+13	);
+14	
+15	CREATE TABLE G(
+16		a int,
+17		c int,
+18		b varchar(20),
+19		e varchar(20),
+20		primary key(a,c),
+21		foreign key(a,c) references E(a,c),
+22	);
+23	
+24	CREATE TABLE H(
+25		H int,
+26		G varchar(20),
+27		primary key(h),
+28	);
+29	
+30	CREATE TABLE S(
+31		a int,
+32		c int,
+33		h int,
+34		f varchar(20),
+35		primary key(a,c,h),
+36		foreign key(a,c) references G(a,c),
+37		foreign key(h) references H(h)
+38	);
+

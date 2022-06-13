@@ -1,5 +1,5 @@
 # DB-works
-> [jack-lio](https://github.com/Jack-Lio) 数据库系统课程项目作业       
+> [jack-lio](https://github.com/Jack-Lio) 南开大学计算机专业数据库系统课程项目作业       
 > 文档最新更新于 2019年10月21日      
 基于SQL server的便利店数据库管理系统实现            
 
